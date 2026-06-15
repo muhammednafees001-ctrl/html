@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colorful UI Landing Page</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    color:pinc;
+    overflow-x:hidden;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffe066;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 8%;
+    min-height:80vh;
+    gap:40px;
+}
+
+.hero-text{
+    max-width:550px;
+}
+
+.hero-text h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:1.1rem;
+    margin-bottom:30px;
+    color:rgba(255,255,255,0.9);
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#ffcc00;
+    color:#222;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    background:white;
+}
+
+.hero-image{
+    position:relative;
+    width:420px;
+    height:420px;
+}
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    opacity:0.85;
+}
+
+.c1{
+    width:300px;
+    height:300px;
+    background:#ff6b6b;
+    top:20px;
+    left:40px;
+}
+
+.c2{
+    width:220px;
+    height:220px;
+    background:#ffd93d;
+    bottom:20px;
+    right:0;
+}
+
+.c3{
+    width:150px;
+    height:150px;
+    background:#4ef037;
+    top:0;
+    right:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:40px 8% 80px;
+}
+
+.card{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.2);
+    padding:30px;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:rgba(255,255,255,0.25);
+}
+
+.card h3{
+    margin-bottom:15px;
+    font-size:1.4rem;
+}
+
+.card p{
+    color:rgba(255,255,255,0.85);
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:rgba(0,0,0,0.15);
+}
+
+@media(max-width:900px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:3rem;
+    }
+
+    .hero-image{
+        width:300px;
+        height:300px;
+    }
+
+    .c1{
+        width:220px;
+        height:220px;
+    }
+
+    .c2{
+        width:160px;
+        height:160px;
+    }
+
+    .c3{
+        width:110px;
+        height:110px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">?? ColorUI</div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>nafees nappu wep site</h1>
+        <p>
+            Create stunning user experiences with vibrant gradients,
+            glassmorphism cards, and modern layouts.
+        </p>
+        <a href="#" class="btn">Get Started</a>
+    </div>
+
+    <div class="hero-image">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+    </div>
+</section>
+
+<section class="cards">
+    <div class="card">
+        <h3>?? Creative Design</h3>
+        <p>Modern colorful layouts with smooth visual effects.</p>
+    </div>
+
+    <div class="card">
+        <h3>? Fast Performance</h3>
+        <p>Lightweight and responsive design for all devices.</p>
+    </div>
+
+    <div class="card">
+        <h3>?? Mobile Friendly</h3>
+        <p>Looks great on desktops, tablets, and smartphones.</p>
+    </div>
+
+    <div class="card">
+        <h3>?? Easy Customization</h3>
+        <p>Modify colors, fonts, and sections effortlessly.</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 ColorUI. All Rights Reserved.
+</footer>
+
+</body>
+</html>
